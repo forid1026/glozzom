@@ -1,0 +1,177 @@
+$icon-size: 50px;
+$dark-overlay: rgba(0,0,0,0.7);
+.navbar{
+	background: #000;
+	.nav-item{
+		padding-left: 1em;
+	}
+	.nav-link{
+		text-transform: uppercase;
+
+	}
+	
+}
+
+// carousel slider
+.carousel-item{
+	height: 450px;
+
+}
+.carousel-img-1{
+	background-image: url('../img/image1.jpeg');
+	background-size: cover;
+}
+.carousel-img-2{
+	background-image: url('../img/image2.jpeg');
+	background-size: cover;
+}
+.carousel-img-3{
+	background-image: url('../img/image3.jpeg');
+	background-size: cover;
+}
+
+// home section
+#homeIcon{
+	.fa{
+		font-size: $icon-size;
+	}
+}
+// get-started
+#getStarted{
+	position: relative;
+	background-image: url('../img/bg1.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 250px;
+
+	.dark-overlay{
+		background: $dark-overlay;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+// Home Vedio section
+#homeVideo{
+	position: relative;
+	background-image: url('../img/people.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 250px;
+
+	.dark-overlay{
+		background: $dark-overlay;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.fa{
+		font-size: $icon-size;
+		color: #ff0000;
+	}
+
+}
+
+// gallery section
+#gallery{
+	img{
+		min-height: 250px;
+	}
+	.lead{
+		margin-bottom: 2.5rem !important;
+		font-size: 1.5rem !important;
+	}
+
+}
+// footer
+#footer{
+	background: #000;
+}
+
+
+// about page
+#page-header{
+	background-image: url('../img/image1.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+#about-info{
+	img{
+		height: 350px;
+		width: 350px;
+	}
+}
+#boxes{
+	.fa{
+		font-size: $icon-size;
+		margin-bottom: 20px;
+	}
+}
+
+#testimonial{
+	.slick-prev::before,
+	.slick-next:before{
+		color: #000;
+	}
+
+}
+// Service page
+
+#serviceHeader{
+	background-image: url('../img/image3.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+// Blog Header
+#blogHeader{
+	background: url('../img/image3.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+#contactHeader{
+	background: url('../img/image3.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+// media query
+@media(max-width: 767px) {
+	.nav-item{
+		padding-left: 0 !important;
+	}
+	#getStarted{
+		min-height: 300px;
+	}	
+}
+@media (max-width: 500px) {
+	.carousel{
+		h2{
+		  font-size: 2.5rem !important;
+	}
+	} 
+	#getStarted{
+		min-height: 350px;
+
+	}
+}
+
+@media (max-width: 335px) {
+	.carousel{
+		.carousel-caption{
+		  padding-bottom: 1rem !important;
+	}
+	} 
+}
+@media (max-width: 376px) {
+	#getStarted{
+		min-height: 400px;
+	}
+}
